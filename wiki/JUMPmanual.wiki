@@ -66,35 +66,9 @@ software, such as ReAdW or msconverter.
    
 *Parameters guide*
                                                                                                                                                                                                                                                                        
-|| 
-*Name*
+|| *Name* || *Description* || *Type* || **Default** ||
 
- || 
-*Description*
-
- || 
-*Type*
-
- || 
-*Default**
-
- ||
-
-|| 
-database_name
-
- || 
-Specifies the FASTA or index protein database for search. If a FASTA
-  file was specified, the program will automatically build an indexed
-  database  
-
- || 
-string
-
- || 
-None
-
- ||
+|| database_name || Specifies the FASTA or index protein database for search. If a FASTA  file was specified, the program will automatically build an indexed  database   || string || None ||
 
    
 ############################## Parameter file for JUMP

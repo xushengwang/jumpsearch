@@ -68,26 +68,8 @@ software, such as ReAdW or msconverter.
 
                                                                                                                                                                                                                                                                   
 || *Category* || *Name*  || *Description* || *Type* || *Default* ||
-|| 
-Database
-
- || 
-database_name
-
- || 
-Specifies the FASTA or index protein database for search. If a FASTA
-  file was specified, the program will automatically build an indexed
-  database  
-
- || 
-string
-
- || 
-None
-
- ||
-|| 
-enzyme_info
+|| Database   || database_name || Specifies the FASTA or index protein database for search. If a FASTA file was specified, the program will automatically build an indexed database  || string  || None ||
+|| enzyme_info
 
  || 
 Specifies the enzyme information used for creating a database 

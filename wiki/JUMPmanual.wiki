@@ -1,842 +1,1223 @@
-<html><head><meta http-equiv=Content-Type content="text/html; charset=gb2312"><meta name=Generator content="Microsoft Word 14 (filtered)"><style><&#33;--
-/* Font Definitions */
-@font-face
-	{font-family:Wingdings;
-	panose-1:5 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:宋体;
-	panose-1:2 1 6 0 3 1 1 1 1 1;}
-@font-face
-	{font-family:宋体;
-	panose-1:2 1 6 0 3 1 1 1 1 1;}
-@font-face
-	{font-family:Calibri;
-	panose-1:2 15 5 2 2 2 4 3 2 4;}
-@font-face
-	{font-family:Tahoma;
-	panose-1:2 11 6 4 3 5 4 4 2 4;}
-@font-face
-	{font-family:"\@宋体";
-	panose-1:2 1 6 0 3 1 1 1 1 1;}
-/* Style Definitions */
-p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{margin-top:0in;
-	margin-right:0in;
-	margin-bottom:10.0pt;
-	margin-left:0in;
-	line-height:115%;
-	font-size:11.0pt;
-	font-family:"Calibri","sans-serif";
-	color:windowtext;}
-h1
-	{mso-style-link:"Heading 1 Char";
-	margin-top:24.0pt;
-	margin-right:0in;
-	margin-bottom:0in;
-	margin-left:0in;
-	margin-bottom:.0001pt;
-	line-height:115%;
-	page-break-after:avoid;
-	font-size:14.0pt;
-	font-family:"Cambria","serif";
-	color:#365F91;
-	font-weight:bold;}
-h2
-	{mso-style-link:"Heading 2 Char";
-	margin-right:0in;
-	margin-bottom:10.5pt;
-	margin-left:0in;
-	font-size:17.0pt;
-	font-family:"Times New Roman","serif";
-	color:#384474;
-	font-weight:bold;}
-a:link, span.MsoHyperlink
-	{color:#003399;
-	text-decoration:underline;}
-a:visited, span.MsoHyperlinkFollowed
-	{color:purple;
-	text-decoration:underline;}
-p
-	{margin-right:0in;
-	margin-bottom:11.25pt;
-	margin-left:0in;
-	font-size:12.0pt;
-	font-family:"Times New Roman","serif";
-	color:#151515;}
-pre
-	{mso-style-link:"HTML Preformatted Char";
-	margin:0in;
-	margin-bottom:.0001pt;
-	font-size:10.0pt;
-	font-family:"Courier New";
-	color:windowtext;}
-p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
-	{mso-style-link:"Balloon Text Char";
-	margin:0in;
-	margin-bottom:.0001pt;
-	font-size:8.0pt;
-	font-family:"Tahoma","sans-serif";
-	color:windowtext;}
-p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
-	{margin-top:0in;
-	margin-right:0in;
-	margin-bottom:10.0pt;
-	margin-left:.5in;
-	line-height:115%;
-	font-size:11.0pt;
-	font-family:"Calibri","sans-serif";
-	color:windowtext;}
-p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
-	{margin-top:0in;
-	margin-right:0in;
-	margin-bottom:0in;
-	margin-left:.5in;
-	margin-bottom:.0001pt;
-	line-height:115%;
-	font-size:11.0pt;
-	font-family:"Calibri","sans-serif";
-	color:windowtext;}
-p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
-	{margin-top:0in;
-	margin-right:0in;
-	margin-bottom:0in;
-	margin-left:.5in;
-	margin-bottom:.0001pt;
-	line-height:115%;
-	font-size:11.0pt;
-	font-family:"Calibri","sans-serif";
-	color:windowtext;}
-p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
-	{margin-top:0in;
-	margin-right:0in;
-	margin-bottom:10.0pt;
-	margin-left:.5in;
-	line-height:115%;
-	font-size:11.0pt;
-	font-family:"Calibri","sans-serif";
-	color:windowtext;}
-span.Heading2Char
-	{mso-style-name:"Heading 2 Char";
-	mso-style-link:"Heading 2";
-	font-family:"Times New Roman","serif";
-	color:#384474;
-	font-weight:bold;}
-span.HTMLPreformattedChar
-	{mso-style-name:"HTML Preformatted Char";
-	mso-style-link:"HTML Preformatted";
-	font-family:"Courier New";}
-span.BalloonTextChar
-	{mso-style-name:"Balloon Text Char";
-	mso-style-link:"Balloon Text";
-	font-family:"Tahoma","sans-serif";}
-span.apple-converted-space
-	{mso-style-name:apple-converted-space;}
-span.spelle
-	{mso-style-name:spelle;}
-span.Heading1Char
-	{mso-style-name:"Heading 1 Char";
-	mso-style-link:"Heading 1";
-	font-family:"Cambria","serif";
-	color:#365F91;
-	font-weight:bold;}
-.MsoPapDefault
-	{margin-bottom:10.0pt;
-	line-height:115%;}
-@page WordSection1
-	{size:8.5in 11.0in;
-	margin:1.0in 1.0in 1.0in 1.0in;}
-div.WordSection1
-	{page:WordSection1;}
-/* List Definitions */
-ol
-	{margin-bottom:0in;}
-ul
-	{margin-bottom:0in;}
---></style></head><body lang=EN-US link="#003399" vlink=purple><div class=WordSection1><p class=MsoNormal style='margin-bottom:10.5pt;line-height:normal'><b><span
-lang=EN style='font-size:12.5pt;font-family:"Arial","sans-serif";color:#384474'>JUMP</span></b><b><span
-lang=EN style='font-size:12.5pt;font-family:"Arial","sans-serif";color:#384474'></span></b><b><span lang=EN style='font-size:12.5pt;font-family:"Arial","sans-serif";
-color:#384474'>v1.0</span></b></p><p class=MsoNormal style='margin-bottom:11.25pt;line-height:normal'><span
-lang=EN style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#151515'>Table
-of Contents:</span></p><p class=MsoNormal style='margin-bottom:11.25pt;line-height:normal'><span
-lang=EN style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#151515'>Introduction</span></p><p class=MsoNormal style='margin-bottom:11.25pt;line-height:normal'><span
-lang=EN style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#151515'>Download</span></p><p class=MsoNormal style='margin-bottom:11.25pt;line-height:normal'><span
-lang=EN style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#151515'>Usage</span></p><p class=MsoNormal style='margin-bottom:11.25pt;line-height:normal'><span
-lang=EN style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#151515'>Parameter
-guide</span></p><p class=MsoNormal style='margin-bottom:11.25pt;line-height:normal'><span
-lang=EN style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#151515'>&nbsp;</span></p><p class=MsoNormal style='margin-bottom:11.25pt;line-height:normal'><b><u><span
-lang=EN style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#151515'>Introduction</span></u></b></p><p class=MsoNormal style='margin-bottom:11.25pt;text-indent:.5in;line-height:
-normal'><span lang=EN style='font-size:12.0pt;font-family:"Arial","sans-serif";
-color:#151515'>JUMP</span><span lang=EN style='font-size:12.0pt;font-family:
-"Arial","sans-serif";color:#151515'> (</span><u><span style='font-size:12.0pt;
-font-family:"Arial","sans-serif";color:#151515'>Ju</span></u><span
-style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#151515'>mbo </span><u><span
-style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#151515'>M</span></u><span
-style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#151515'>ass </span><span
-style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#151515'>S</span><span
-style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#151515'>pectrometry-based
-</span><u><span style='font-size:12.0pt;font-family:"Arial","sans-serif";
-color:#151515'>P</span></u><span style='font-size:12.0pt;font-family:"Arial","sans-serif";
-color:#151515'>roteomics </span><span style='font-size:12.0pt;font-family:"Arial","sans-serif";
-color:#151515'>T</span><span style='font-size:12.0pt;font-family:"Arial","sans-serif";
-color:#151515'>ool</span><span lang=EN style='font-size:12.0pt;font-family:
-"Arial","sans-serif";color:#151515'>) is a new </span><span lang=EN
-style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#151515'>database
-search engine</span><span lang=EN style='font-size:12.0pt;font-family:"Arial","sans-serif";
-color:#151515'> for</span><span lang=EN style='font-size:12.0pt;font-family:
-"Arial","sans-serif";color:#151515'> peptide </span><span style='font-size:
-12.0pt;font-family:"Arial","sans-serif";color:#151515'>identification. JUMP
-incorporates sequence tag generation and tag scoring into database search.</span></p><p class=MsoNormal style='margin-bottom:11.25pt;line-height:normal'><b><u><span
-lang=EN style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#151515'>Download</span></u></b></p><p class=MsoNormal style='margin-bottom:11.25pt;text-indent:.5in;line-height:
-normal'><span lang=EN style='font-size:12.0pt;font-family:"Arial","sans-serif";
-color:#151515'>The source code can be downloaded <b><u>here</u></b> and used
-according to the terms of the GNU General Public License (GPL), version </span><span
-lang=EN style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#151515'>2</span><span
-lang=EN style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#151515'>
-or later</span><span lang=EN style='font-size:12.0pt;font-family:"Arial","sans-serif";
-color:#151515'>. The parameter file can be downloaded <b><u>here</u></b>. </span></p><p class=MsoNormal style='text-indent:.5in;line-height:normal'><span lang=EN
-style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#151515'>Sample
+
+*JUMP**v1.0*
+
+
+Table
+of Contents:
+
+
+Introduction
+
+
+Download
+
+
+Usage
+
+
+Parameter
+guide
+
+ 
+*Introduction*
+
+
+JUMP (Jumbo Mass Spectrometry-based
+Proteomics Tool) is a new database
+search engine for peptide identification. JUMP
+incorporates sequence tag generation and tag scoring into database search.
+
+
+*Download*
+
+
+The source code can be downloaded *here* and used
+according to the terms of the GNU General Public License (GPL), version 2
+or later. The parameter file can be downloaded *here*. 
+
+
+Sample
 data can be downloaded: data set 1 for regular identification and data set 2
-for post-translational modifications.</span></p><p class=MsoNormal style='margin-bottom:11.25pt;line-height:normal'><b><u><span
-lang=EN style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#151515'>Usage</span></u></b></p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'><a name=UsageBasic></a><span lang=EN style='font-size:12.0pt;
-font-family:"Arial","sans-serif";color:#151515'>The basic usage of&nbsp;JUMP&nbsp;is
-quite simple:</span></p><p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
-font-family:"Arial","sans-serif";color:#151515'>JUMP.pl -param &lt;JUMP
-parameter file&gt; -rawfile &lt;</span><span style='font-family:"Arial","sans-serif";
-color:black'> MS/MS data<span class=apple-converted-space>&nbsp;</span><span
-class=spelle>file</span></span><span style='font-size:12.0pt;font-family:"Arial","sans-serif";
-color:#151515'>&gt;</span></p><p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
-font-family:"Arial","sans-serif";color:#151515'>-param
-&lt;file&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-specifies a JUMP parameter file</span></p><p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
-font-family:"Arial","sans-serif";color:#151515'>-rawfile
-&lt;file&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-specifies an MS/MS data&nbsp;file</span></p><p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
-font-family:"Arial","sans-serif";color:#151515'>An MS/MS data file can be
+for post-translational modifications.
+
+
+*Usage*
+
+
+The basic usage of JUMP is
+quite simple:
+
+
+JUMP.pl -param &lt;JUMP
+parameter file&gt; -rawfile &lt; MS/MS data file&gt;
+
+
+-param
+&lt;file&gt;             
+specifies a JUMP parameter file
+
+
+-rawfile
+&lt;file&gt;             
+specifies an MS/MS data file
+
+
+An MS/MS data file can be
 either .RAW or mzXML file that can be converted from .RAW file by various
-software, such as ReAdW or msconverter.</span></p><p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
-font-family:"Arial","sans-serif";color:#151515'>&nbsp;</span></p><p class=MsoNormal style='margin-bottom:11.25pt;line-height:normal'><b><u><span
-lang=EN style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#151515'>Parameters
-guide</span></u></b></p>
+software, such as ReAdW or msconverter.
+
+ 
+*Parameters
+guide*
+
+
 {|  class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width=655 style='width:491.4pt;border-collapse:collapse;border:none' 
-|  width=98 valign=top style='width:73.45pt;border:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
-text-align:center;line-height:normal'><b><span style='font-size:14.0pt'>Category</span></b></p>
-|  width=149 valign=top style='width:111.95pt;border:solid windowtext 1.0pt;  border-left:none;padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
-text-align:center;line-height:normal'><b><span style='font-size:14.0pt'>Name</span></b></p>
-|  width=245 valign=top style='width:183.75pt;border:solid windowtext 1.0pt;  border-left:none;padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
-text-align:center;line-height:normal'><b><span style='font-size:14.0pt'>Description</span></b></p>
-|  width=63 valign=top style='width:47.25pt;border:solid windowtext 1.0pt;  border-left:none;padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
-text-align:center;line-height:normal'><b><span style='font-size:14.0pt'>Type</span></b></p>
-|  width=100 valign=top style='width:75.0pt;border:solid windowtext 1.0pt;  border-left:none;padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
-text-align:center;line-height:normal'><b><span style='font-size:14.0pt'>Default*</span></b></p>
+|  width=98 valign=top style='width:73.45pt;border:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+*Category*
+
+
+|  width=149 valign=top style='width:111.95pt;border:solid windowtext 1.0pt;  border-left:none;padding:0in 5.4pt 0in 5.4pt' | 
+*Name*
+
+
+|  width=245 valign=top style='width:183.75pt;border:solid windowtext 1.0pt;  border-left:none;padding:0in 5.4pt 0in 5.4pt' | 
+*Description*
+
+
+|  width=63 valign=top style='width:47.25pt;border:solid windowtext 1.0pt;  border-left:none;padding:0in 5.4pt 0in 5.4pt' | 
+*Type*
+
+
+|  width=100 valign=top style='width:75.0pt;border:solid windowtext 1.0pt;  border-left:none;padding:0in 5.4pt 0in 5.4pt' | 
+*Default**
+
+
 |- 
-|  width=98 rowspan=7 style='width:73.45pt;border:solid windowtext 1.0pt;  border-top:none;padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
-text-align:center;line-height:normal'>Database</p>
-|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>database_name</p>
-|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>Specifies the FASTA or index protein database for search. If a FASTA
+|  width=98 rowspan=7 style='width:73.45pt;border:solid windowtext 1.0pt;  border-top:none;padding:0in 5.4pt 0in 5.4pt' | 
+Database
+
+
+|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+database_name
+
+
+|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+Specifies the FASTA or index protein database for search. If a FASTA
 file was specified, the program will automatically build an indexed
-database&nbsp; </p>
-|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>string</p>
-|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>None</p>
+database  
+
+
+|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+string
+
+
+|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+None
+
+
 |- 
-|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>enzyme_info</p>
-|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>Specifies the enzyme information used for creating a database </p>
-|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>string</p>
-|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>Tryptic KR P</p>
+|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+enzyme_info
+
+
+|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+Specifies the enzyme information used for creating a database 
+
+
+|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+string
+
+
+|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+Tryptic KR P
+
+
 |- 
-|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>digestion</p>
-|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>Specifies the digestion methods. Three types of methods can be used,
-including Full, Partial, and None</p>
-|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>string</p>
-|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>Full</p>
+|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+digestion
+
+
+|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+Specifies the digestion methods. Three types of methods can be used,
+including Full, Partial, and None
+
+
+|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+string
+
+
+|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+Full
+
+
 |- 
-|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>max_mis_cleavage</p>
-|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>A missed cleavage is defined as a site within the peptide matching
+|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+max_mis_cleavage
+
+
+|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+A missed cleavage is defined as a site within the peptide matching
 one of the cleavage rules (see enzyme_info). This parameter is used to set
-the maximum number of missed cleavages.</p>
-|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>integer</p>
-|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>2</p>
+the maximum number of missed cleavages.
+
+
+|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+integer
+
+
+|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+2
+
+
 |- 
-|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>min_peptide_mass</p>
-|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>Specifies the minimum mass value of peptides in the database</p>
-|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>integer</p>
-|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>400</p>
+|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+min_peptide_mass
+
+
+|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+Specifies the minimum mass value of peptides in the database
+
+
+|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+integer
+
+
+|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+400
+
+
 |- 
-|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>max_peptide_mass</p>
-|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>Specifies the maximum mass value of peptides in the database</p>
-|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>integer</p>
-|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>6000</p>
+|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+max_peptide_mass
+
+
+|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+Specifies the maximum mass value of peptides in the database
+
+
+|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+integer
+
+
+|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+6000
+
+
 |- 
-|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>inclusion_decoy</p>
-|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>This parameter is to set whether the database contains the decoy
-sequences</p>
-|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>boolean</p>
-|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>1 (true)</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>0 (false)</p>
+|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+inclusion_decoy
+
+
+|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+This parameter is to set whether the database contains the decoy
+sequences
+
+
+|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+boolean
+
+
+|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+1 (true)
+
+
+0 (false)
+
+
 |-  style='height:27.35pt'
-|  width=98 rowspan=11 style='width:73.45pt;border:solid windowtext 1.0pt;  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:27.35pt' | <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
-text-align:center;line-height:normal'>Preprocessing</p>
-|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt;height:27.35pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>isolation_window</p>
-|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt;height:27.35pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>Specifies the isolation window used for peak selection, with unit of
-m/z</p>
-|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt;height:27.35pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>float</p>
-|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt;height:27.35pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>1.0</p>
+|  width=98 rowspan=11 style='width:73.45pt;border:solid windowtext 1.0pt;  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:27.35pt' | 
+Preprocessing
+
+
+|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt;height:27.35pt' | 
+isolation_window
+
+
+|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt;height:27.35pt' | 
+Specifies the isolation window used for peak selection, with unit of
+m/z
+
+
+|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt;height:27.35pt' | 
+float
+
+
+|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt;height:27.35pt' | 
+1.0
+
+
 |-  style='height:27.35pt'
-|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt;height:27.35pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>intrascanppm</p>
-|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt;height:27.35pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>ppm for peak matching within the same scan</p>
-|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt;height:27.35pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>integer</p>
-|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt;height:27.35pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>10</p>
+|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt;height:27.35pt' | 
+intrascanppm
+
+
+|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt;height:27.35pt' | 
+ppm for peak matching within the same scan
+
+
+|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt;height:27.35pt' | 
+integer
+
+
+|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt;height:27.35pt' | 
+10
+
+
 |- 
-|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>interscanppm</p>
-|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>ppm for peak matching between different scans</p>
-|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>integer</p>
-|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>5</p>
+|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+interscanppm
+
+
+|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+ppm for peak matching between different scans
+
+
+|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+integer
+
+
+|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+5
+
+
 |- 
-|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>preproc_msscanrange</p>
-|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>range of ms scans used for decharging</p>
-|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>integer</p>
-|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>4</p>
+|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+preproc_msscanrange
+
+
+|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+range of ms scans used for decharging
+
+
+|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+integer
+
+
+|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+4
+
+
 |-  style='height:28.3pt'
-|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt;height:28.3pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>ms2_consolidation</p>
-|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt;height:28.3pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>Specifies number of peaks to keep within 100 m/z units&nbsp; </p>
-|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt;height:28.3pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>integer</p>
-|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt;height:28.3pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>6</p>
+|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt;height:28.3pt' | 
+ms2_consolidation
+
+
+|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt;height:28.3pt' | 
+Specifies number of peaks to keep within 100 m/z units  
+
+
+|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt;height:28.3pt' | 
+integer
+
+
+|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt;height:28.3pt' | 
+6
+
+
 |- 
-|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>ms2_deisotope</p>
-|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>Speficies whether to perform deisotope for MS2 peaks</p>
-|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>boolean</p>
-|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>1 (true)</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>0 (false)</p>
+|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+ms2_deisotope
+
+
+|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+Speficies whether to perform deisotope for MS2 peaks
+
+
+|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+boolean
+
+
+|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+1 (true)
+
+
+0 (false)
+
+
 |- 
-|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>prec_mass_window</p>
-|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>Specifies to remove the peaks with the window with precursor mass +/-
-value/2 (additional static 0.25 tolerance to either side)</p>
-|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>float</p>
-|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>3.0</p>
+|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+prec_mass_window
+
+
+|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+Specifies to remove the peaks with the window with precursor mass +/-
+value/2 (additional static 0.25 tolerance to either side)
+
+
+|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+float
+
+
+|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+3.0
+
+
 |- 
-|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>ppm</p>
-|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>Tolerance (ppm) used for MS2 deisotope </p>
-|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>integer</p>
-|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>30</p>
+|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+ppm
+
+
+|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+Tolerance (ppm) used for MS2 deisotope 
+
+
+|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+integer
+
+
+|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+30
+
+
 |- 
-|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>M_M1</p>
-|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>The intensity ratio between the peaks and following peaks. </p>
-|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>float</p>
-|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>0.3</p>
+|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+M_M1
+
+
+|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+The intensity ratio between the peaks and following peaks. 
+
+
+|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+float
+
+
+|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+0.3
+
+
 |- 
-|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>Mn_Mn1</p>
-|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>The intensity ratio between the peaks and following peaks.</p>
-|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>Float</p>
-|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>1</p>
+|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+Mn_Mn1
+
+
+|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+The intensity ratio between the peaks and following peaks.
+
+
+|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+Float
+
+
+|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+1
+
+
 |- 
-|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>charge12_ppm</p>
-|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>Specifies mass tolerance </p>
-|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>Integer</p>
-|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>30</p>
+|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+charge12_ppm
+
+
+|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+Specifies mass tolerance 
+
+
+|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+Integer
+
+
+|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+30
+
+
 |- 
-|  width=98 valign=top style='width:73.45pt;border:solid windowtext 1.0pt;  border-top:none;padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>&nbsp;</p>
-|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>ppi_percentage</p>
-|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>&nbsp;</p>
-|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>&nbsp;</p>
-|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>10</p>
+|  width=98 valign=top style='width:73.45pt;border:solid windowtext 1.0pt;  border-top:none;padding:0in 5.4pt 0in 5.4pt' |  
+|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+ppi_percentage
+
+
+|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' |  
+|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' |  
+|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+10
+
+
 |- 
-|  width=98 rowspan=4 style='width:73.45pt;border:solid windowtext 1.0pt;  border-top:none;padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
-text-align:center;line-height:normal'>Tag</p>
-|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>tag_tolerance</p>
-|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>Mass tolerance used for tag inference</p>
-|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>Float</p>
-|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>0.02 (high)</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>0.5 (low)</p>
+|  width=98 rowspan=4 style='width:73.45pt;border:solid windowtext 1.0pt;  border-top:none;padding:0in 5.4pt 0in 5.4pt' | 
+Tag
+
+
+|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+tag_tolerance
+
+
+|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+Mass tolerance used for tag inference
+
+
+|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+Float
+
+
+|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+0.02 (high)
+
+
+0.5 (low)
+
+
 |- 
-|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>low_mass</p>
-|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>The minimum mass allowed to define a residue</p>
-|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>Integer</p>
-|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>57</p>
+|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+low_mass
+
+
+|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+The minimum mass allowed to define a residue
+
+
+|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+Integer
+
+
+|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+57
+
+
 |- 
-|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>high_mass</p>
-|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>The maximum mass allowed to define a residue</p>
-|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>Integer</p>
-|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>180</p>
+|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+high_mass
+
+
+|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+The maximum mass allowed to define a residue
+
+
+|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+Integer
+
+
+|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+180
+
+
 |- 
-|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>tag_select_method</p>
-|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>Two tag scoring methods can be used, including rank_p and hyper_p.
+|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+tag_select_method
+
+
+|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+Two tag scoring methods can be used, including rank_p and hyper_p.
 The rank_p method calculates the score based on wilcox rank sum method; the
-hyper_p calculates the score based on hypergeometric method.</p>
-|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>string</p>
-|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>rank_p (high)</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>hyper_p (low)</p>
+hyper_p calculates the score based on hypergeometric method.
+
+
+|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+string
+
+
+|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+rank_p (high)
+
+
+hyper_p (low)
+
+
 |- 
-|  width=98 rowspan=7 style='width:73.45pt;border:solid windowtext 1.0pt;  border-top:none;padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
-text-align:center;line-height:normal'>Search</p>
-|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>ion_series</p>
-|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>&nbsp;a, b, c, d, v, w, x, y, and z ions respectively. The values
-entered for these paramters should either 0 or 1. </p>
-|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>String</p>
-|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>&nbsp;</p>
+|  width=98 rowspan=7 style='width:73.45pt;border:solid windowtext 1.0pt;  border-top:none;padding:0in 5.4pt 0in 5.4pt' | 
+Search
+
+
+|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+ion_series
+
+
+|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+ a, b, c, d, v, w, x, y, and z ions respectively. The values
+entered for these paramters should either 0 or 1. 
+
+
+|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+String
+
+
+|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' |  
 |- 
-|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>peptide_tolerance</p>
-|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>This parameter is used to find candidate peptides. The candidate
+|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+peptide_tolerance
+
+
+|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+This parameter is used to find candidate peptides. The candidate
 peptides is selected if the candidate mass is within this tolerance of the
 experimental precursor mass. The units can be specified by the ‘peptide_tolerance_units’
-parameter.</p>
-|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>integer</p>
-|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>15</p>
+parameter.
+
+
+|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+integer
+
+
+|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+15
+
+
 |- 
-|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>peptide_tolerance_units</p>
-|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>Two types of mass units: 1 for Da and 2 for parts per million (ppm).</p>
-|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>integer</p>
-|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>2</p>
+|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+peptide_tolerance_units
+
+
+|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+Two types of mass units: 1 for Da and 2 for parts per million (ppm).
+
+
+|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+integer
+
+
+|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+2
+
+
 |- 
-|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>frag_mass_tolerance</p>
-|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>Specifies the fragment mass tolerance. The fragment tolerance should
+|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+frag_mass_tolerance
+
+
+|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+Specifies the fragment mass tolerance. The fragment tolerance should
 be set at 0.01 for high depended on high-resolution instrument resolution; it
-should be set at 0.5 for low-resolution instrument. </p>
-|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>float</p>
-|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>0.01 (high)</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>0.5 (low)</p>
+should be set at 0.5 for low-resolution instrument. 
+
+
+|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+float
+
+
+|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+0.01 (high)
+
+
+0.5 (low)
+
+
 |- 
-|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>tag_search_method</p>
-|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>Two search methods can be specified: 1 for ; 2 for searching by the a
-certain number of tags </p>
-|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>integer</p>
-|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>1 or 2</p>
+|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+tag_search_method
+
+
+|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+Two search methods can be specified: 1 for ; 2 for searching by the a
+certain number of tags 
+
+
+|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+integer
+
+
+|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+1 or 2
+
+
 |- 
-|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>max_number_tags_for_search</p>
-|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>This parameter is used to define the number of tags that are used for
-search. The tag is sorted in terms of its p-value. The software search</p>
-|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>integer</p>
-|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>100</p>
+|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+max_number_tags_for_search
+
+
+|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+This parameter is used to define the number of tags that are used for
+search. The tag is sorted in terms of its p-value. The software search
+
+
+|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+integer
+
+
+|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+100
+
+
 |- 
-|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>tag_coeff_evalue</p>
-|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>Specifies the weight of tag E value for calculating weighted E value.</p>
-|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>float</p>
-|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>1.0</p>
+|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+tag_coeff_evalue
+
+
+|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+Specifies the weight of tag E value for calculating weighted E value.
+
+
+|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+float
+
+
+|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+1.0
+
+
 |- 
-|  width=98 rowspan=3 style='width:73.45pt;border:solid windowtext 1.0pt;  border-top:none;padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
-text-align:center;line-height:normal'>Modification</p>
-|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>dynamic_AA</p>
-|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>This parameter is used to define dynamic amino acids. </p>
-|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>Float</p>
-|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>&nbsp;</p>
+|  width=98 rowspan=3 style='width:73.45pt;border:solid windowtext 1.0pt;  border-top:none;padding:0in 5.4pt 0in 5.4pt' | 
+Modification
+
+
+|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+dynamic_AA
+
+
+|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+This parameter is used to define dynamic amino acids. 
+
+
+|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+Float
+
+
+|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' |  
 |- 
-|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>add_AA_name</p>
-|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>This is static modification. If the value for any residues is setted,
-it should always be treated as having a modification on their natural mass. </p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>For example, the cysteine is carboxymethylated, this parameter would
-be set to be: add_C_Cysteine = 57.02146.</p>
-|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>float</p>
-|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>&nbsp;</p>
+|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+add_AA_name
+
+
+|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+This is static modification. If the value for any residues is setted,
+it should always be treated as having a modification on their natural mass. 
+
+
+For example, the cysteine is carboxymethylated, this parameter would
+be set to be: add_C_Cysteine = 57.02146.
+
+
+|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+float
+
+
+|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' |  
 |- 
-|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>max_modif_num</p>
-|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>This parameter is used to set the maximum number of dynamic
-modifications that can be in the candidate peptide. </p>
-|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>integer</p>
-|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>6</p>
+|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+max_modif_num
+
+
+|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+This parameter is used to set the maximum number of dynamic
+modifications that can be in the candidate peptide. 
+
+
+|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+integer
+
+
+|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+6
+
+
 |- 
-|  width=98 rowspan=2 valign=top style='width:73.45pt;border:solid windowtext 1.0pt;  border-top:none;padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>Cluster system</p>
-|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>cluster</p>
-|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>Specifies whether JUMP will be run on the cluster</p>
-|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>boolean</p>
-|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>1 (true)</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>0 (false)</p>
+|  width=98 rowspan=2 valign=top style='width:73.45pt;border:solid windowtext 1.0pt;  border-top:none;padding:0in 5.4pt 0in 5.4pt' | 
+Cluster system
+
+
+|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+cluster
+
+
+|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+Specifies whether JUMP will be run on the cluster
+
+
+|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+boolean
+
+
+|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+1 (true)
+
+
+0 (false)
+
+
 |- 
-|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>Job_Management_System</p>
-|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>Specifies the platform of the cluster. Three types of jobs can be
-used: SGE, PBS and LSF.</p>
-|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>String</p>
-|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>SGE</p>
+|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+Job_Management_System
+
+
+|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+Specifies the platform of the cluster. Three types of jobs can be
+used: SGE, PBS and LSF.
+
+
+|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+String
+
+
+|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+SGE
+
+
 |- 
-|  width=98 rowspan=2 valign=top style='width:73.45pt;border:solid windowtext 1.0pt;  border-top:none;padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>Ouput</p>
-|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>number_of_selected_result</p>
-|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>Specifies the number of records being shown in the selected output
-section in the output file. </p>
-|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>Integer</p>
-|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>3</p>
+|  width=98 rowspan=2 valign=top style='width:73.45pt;border:solid windowtext 1.0pt;  border-top:none;padding:0in 5.4pt 0in 5.4pt' | 
+Ouput
+
+
+|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+number_of_selected_result
+
+
+|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+Specifies the number of records being shown in the selected output
+section in the output file. 
+
+
+|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+Integer
+
+
+|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+3
+
+
 |- 
-|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>number_of_detailed_result</p>
-|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>Specifies the number of records being shown in the “Selected
-identified peptide” section in the output file.</p>
-|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>integer</p>
-|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>100</p>
+|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+number_of_detailed_result
+
+
+|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+Specifies the number of records being shown in the “Selected
+identified peptide” section in the output file.
+
+
+|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+integer
+
+
+|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+100
+
+
 |- 
-|  width=98 rowspan=3 valign=top style='width:73.45pt;border:solid windowtext 1.0pt;  border-top:none;padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>Simulation</p>
-|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>simulation</p>
-|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>Specifies whether to perform simulation.&nbsp; If true, either one of
+|  width=98 rowspan=3 valign=top style='width:73.45pt;border:solid windowtext 1.0pt;  border-top:none;padding:0in 5.4pt 0in 5.4pt' | 
+Simulation
+
+
+|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+simulation
+
+
+|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+Specifies whether to perform simulation.  If true, either one of
 the following methods can used to generate a falsified data sets based on
-input real data.</p>
-|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>boolean</p>
-|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>1 (true)</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>0 (false)</p>
+input real data.
+
+
+|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+boolean
+
+
+|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+1 (true)
+
+
+0 (false)
+
+
 |- 
-|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>sim_MS1</p>
-|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>If the ‘simulation’ parameter is set, the data set was generated by
-adding precusor ion mass of each MS/MS spectrum by 100 ppm.</p>
-|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>Integer</p>
-|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>100</p>
+|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+sim_MS1
+
+
+|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+If the ‘simulation’ parameter is set, the data set was generated by
+adding precusor ion mass of each MS/MS spectrum by 100 ppm.
+
+
+|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+Integer
+
+
+|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+100
+
+
 |- 
-|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>sim_MS2</p>
-|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>If the ‘simulation’ parameter is set, the data set was generated by
+|  width=149 valign=top style='width:111.95pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+sim_MS2
+
+
+|  width=245 valign=top style='width:183.75pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+If the ‘simulation’ parameter is set, the data set was generated by
 randomizing the MS/MS spectrum. Briefly, we generated uniform random number from
--5 to 5, and added this random number to each m/z of each peak.</p>
-|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>integer</p>
-|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>5</p>
-|}<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>Note: * represents suggested value for JUMP.</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>&nbsp;</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>&nbsp;</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>&nbsp;</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>&nbsp;</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>&nbsp;</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>&nbsp;</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>&nbsp;</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>&nbsp;</p><span style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif"'><br
-clear=all style='page-break-before:always'></span><p class=MsoNormal>&nbsp;</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'><b>High-resolution data set</b></p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>&nbsp;</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>############################## Parameter file for JUMP
-#################################</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'># JUMP version 10.02 </p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'># Date: 02/01/2013 </p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'># Author: Xusheng Wang </p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>####################################################################################</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>&nbsp;</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>############################## Database #############################################</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>database_name = /home/xwang4/JUMP_database/human/human_ft_mc2_c57.fasta.mdx</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>enzyme_info = Tryptic KR P</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>digestion = full</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>max_mis_cleavage = 2</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>min_peptide_mass = 400.0000</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>max_peptide_mass = 6000.0000</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>inclusion_decoy = 1</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>############################## Preprocessing ##########################################</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>precursor_mass_window = 0.19</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>intrascanppm = 10</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>interscanppm = 5</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>preproc_msscanrange = 4</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>peptide_tolerance = 15</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>peptide_tolerance_units = 2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #
-1 = Th; 2 = ppm;</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>vary_tolerance = 0</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>peptide_tolerance_frac = 0.8</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>ms2_consolidation = 6</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>prec_window = 3</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>ppm = 30</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>M_M1 = 0.3</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>Mn_Mn1 = 1</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>charge12_ppm = 30</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>############################# Tag##################################################</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>tag_tolerance = 0.02</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>low_mass = 57</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>high_mass = 187</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>tag_select_method = rank_p&nbsp; # method can be input: hyper_p or
-rank_p</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>######################Search
-###########################################</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>ion_series = 0 1 0 0 0 0 0 1 0&nbsp; # a, b, c, d, v, w, x, y, and z
-ions respectively</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>frag_mass_tolerance = 0.02</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>tag_search_method = 2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # 1. last
+-5 to 5, and added this random number to each m/z of each peak.
+
+
+|  width=63 valign=top style='width:47.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+integer
+
+
+|  width=100 valign=top style='width:75.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+5
+
+
+|}
+Note: * represents suggested value for JUMP.
+
+        <br> 
+*High-resolution data set*
+
+ 
+############################## Parameter file for JUMP
+#################################
+
+
+# JUMP version 10.02 
+
+
+# Date: 02/01/2013 
+
+
+# Author: Xusheng Wang 
+
+
+####################################################################################
+
+ 
+############################## Database #############################################
+
+
+database_name = /home/xwang4/JUMP_database/human/human_ft_mc2_c57.fasta.mdx
+
+
+enzyme_info = Tryptic KR P
+
+
+digestion = full
+
+
+max_mis_cleavage = 2
+
+
+min_peptide_mass = 400.0000
+
+
+max_peptide_mass = 6000.0000
+
+
+inclusion_decoy = 1
+
+
+############################## Preprocessing ##########################################
+
+
+precursor_mass_window = 0.19
+
+
+intrascanppm = 10
+
+
+interscanppm = 5
+
+
+preproc_msscanrange = 4
+
+
+peptide_tolerance = 15
+
+
+peptide_tolerance_units = 2        #
+1 = Th; 2 = ppm;
+
+
+vary_tolerance = 0
+
+
+peptide_tolerance_frac = 0.8
+
+
+ms2_consolidation = 6
+
+
+prec_window = 3
+
+
+ppm = 30
+
+
+M_M1 = 0.3
+
+
+Mn_Mn1 = 1
+
+
+charge12_ppm = 30
+
+
+############################# Tag##################################################
+
+
+tag_tolerance = 0.02
+
+
+low_mass = 57
+
+
+high_mass = 187
+
+
+tag_select_method = rank_p  # method can be input: hyper_p or
+rank_p
+
+
+######################Search
+###########################################
+
+
+ion_series = 0 1 0 0 0 0 0 1 0  # a, b, c, d, v, w, x, y, and z
+ions respectively
+
+
+frag_mass_tolerance = 0.02
+
+
+tag_search_method = 2       # 1. last
 when found 2. search using the number of tag assigned by
-'max_number_tag_for_search'</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>max_number_tags_for_search = 500&nbsp; # If this number larger than the
-total number of tag, the total number of tag will be used</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>tag_coeff_evalue = 4</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>##################### Dynamic Modification
-######################################</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'># C:&nbsp; 57.02146 carbamidomethylation or 71.0371 acrylamide</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'># STY: 79.96633</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'># M: 15.99492</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'># GG: 114.04293</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'># SILAC K:4.02511, 6.02013, 8.01420</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'># SILAC R:6.02013, 10.00827</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>#STY = 0.000&nbsp;&nbsp; </p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>#K = 0.000 </p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>dynamic_M = 15.99492</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>max_modif_num = 6</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>#################### Static Modification
-############################################</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>add_Cterm_peptide = 0.0000</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>add_Nterm_peptide = 0.0000</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>add_G_Glycine = 0.0000</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>add_A_Alanine = 0.0000</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>add_S_Serine = 0.0000</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>add_P_Proline = 0.0000</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>add_V_Valine = 0.0000</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>add_T_Threonine = 0.0000</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>add_C_Cysteine = 57.02146</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>add_L_Leucine = 0.0000</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>add_I_Isoleucine = 0.0000</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>add_X_LorI = 0.0000</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>add_N_Asparagine = 0.0000</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>add_O_Ornithine = 0.0000</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>add_B_avg_NandD = 0.0000</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>add_D_Aspartic_Acid = 0.0000</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>add_Q_Glutamine = 0.0000</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>add_K_Lysine = 0.0000</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>add_Z_avg_QandE = 0.0000</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>add_E_Glutamic_Acid = 0.0000</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>add_M_Methionine = 0.0000</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>add_H_Histidine = 0.0000</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>add_F_Phenylalanine = 0.0000</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>add_R_Arginine = 0.0000</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>add_Y_Tyrosine = 0.0000</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>add_W_Tryptophan = 0.0000</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>add_J_user_amino_acid = 0.0000</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>add_U_user_amino_acid = 0.0000</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>#################### Cluster system
-####################################################</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>cluster = 1</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>Job_Management_System = SGE</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>#################### Simulation ######################################################</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>simulation = 0&nbsp;&nbsp; # 1 = yes; 0 = no</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>sim_MS1 = 0&nbsp;&nbsp;&nbsp; # unit is ppm</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>sim_MS2 = 0&nbsp;&nbsp;&nbsp;&nbsp; # unit is Da</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>###################### Output for results
-############################################### </p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>number_of_selected_result = 3</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>number_of_detailed_result = 100</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>#####################################################################################</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>&nbsp;</p><p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'>JUMP manual</p><p class=MsoNormal style='margin-bottom:11.25pt;line-height:normal'><b><u><span
-lang=EN style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#151515'>System
-Requirement</span></u></b></p><p class=MsoNormal style='margin-bottom:11.25pt;line-height:normal'><span
-lang=EN style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#151515'>JUMP
-must meet these minimum requirements.</span></p>
+'max_number_tag_for_search'
+
+
+max_number_tags_for_search = 500  # If this number larger than the
+total number of tag, the total number of tag will be used
+
+
+tag_coeff_evalue = 4
+
+
+##################### Dynamic Modification
+######################################
+
+
+# C:  57.02146 carbamidomethylation or 71.0371 acrylamide
+
+
+# STY: 79.96633
+
+
+# M: 15.99492
+
+
+# GG: 114.04293
+
+
+# SILAC K:4.02511, 6.02013, 8.01420
+
+
+# SILAC R:6.02013, 10.00827
+
+
+#STY = 0.000   
+
+
+#K = 0.000 
+
+
+dynamic_M = 15.99492
+
+
+max_modif_num = 6
+
+
+#################### Static Modification
+############################################
+
+
+add_Cterm_peptide = 0.0000
+
+
+add_Nterm_peptide = 0.0000
+
+
+add_G_Glycine = 0.0000
+
+
+add_A_Alanine = 0.0000
+
+
+add_S_Serine = 0.0000
+
+
+add_P_Proline = 0.0000
+
+
+add_V_Valine = 0.0000
+
+
+add_T_Threonine = 0.0000
+
+
+add_C_Cysteine = 57.02146
+
+
+add_L_Leucine = 0.0000
+
+
+add_I_Isoleucine = 0.0000
+
+
+add_X_LorI = 0.0000
+
+
+add_N_Asparagine = 0.0000
+
+
+add_O_Ornithine = 0.0000
+
+
+add_B_avg_NandD = 0.0000
+
+
+add_D_Aspartic_Acid = 0.0000
+
+
+add_Q_Glutamine = 0.0000
+
+
+add_K_Lysine = 0.0000
+
+
+add_Z_avg_QandE = 0.0000
+
+
+add_E_Glutamic_Acid = 0.0000
+
+
+add_M_Methionine = 0.0000
+
+
+add_H_Histidine = 0.0000
+
+
+add_F_Phenylalanine = 0.0000
+
+
+add_R_Arginine = 0.0000
+
+
+add_Y_Tyrosine = 0.0000
+
+
+add_W_Tryptophan = 0.0000
+
+
+add_J_user_amino_acid = 0.0000
+
+
+add_U_user_amino_acid = 0.0000
+
+
+#################### Cluster system
+####################################################
+
+
+cluster = 1
+
+
+Job_Management_System = SGE
+
+
+#################### Simulation ######################################################
+
+
+simulation = 0   # 1 = yes; 0 = no
+
+
+sim_MS1 = 0    # unit is ppm
+
+
+sim_MS2 = 0     # unit is Da
+
+
+###################### Output for results
+############################################### 
+
+
+number_of_selected_result = 3
+
+
+number_of_detailed_result = 100
+
+
+#####################################################################################
+
+ 
+JUMP manual
+
+
+*System
+Requirement*
+
+
+JUMP
+must meet these minimum requirements.
+
+
 {|  class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 style='border-collapse:collapse;border:none' 
-|  width=115 valign=top style='width:1.2in;border:solid windowtext 1.0pt;  background:#B6DDE8;padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:11.25pt;line-height:normal'><b><span
-lang=EN style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#151515'>System</span></b></p>
-|  width=523 valign=top style='width:5.45in;border:solid windowtext 1.0pt;  border-left:none;background:#B6DDE8;padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:11.25pt;line-height:normal'><b><span
-lang=EN style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#151515'>Requirements</span></b></p>
+|  width=115 valign=top style='width:1.2in;border:solid windowtext 1.0pt;  background:#B6DDE8;padding:0in 5.4pt 0in 5.4pt' | 
+*System*
+
+
+|  width=523 valign=top style='width:5.45in;border:solid windowtext 1.0pt;  border-left:none;background:#B6DDE8;padding:0in 5.4pt 0in 5.4pt' | 
+*Requirements*
+
+
 |- 
-|  width=115 valign=top style='width:1.2in;border:solid windowtext 1.0pt;  border-top:none;padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:11.25pt;line-height:normal'><span
-lang=EN style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#151515'>Hardware</span></p>
-|  width=523 valign=top style='width:5.45in;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:11.25pt;line-height:normal'><span
-lang=EN style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#151515'>Cluster
-settings:</span></p><p class=MsoListParagraphCxSpFirst style='margin-bottom:11.25pt;text-indent:
--.25in;line-height:normal'><span lang=EN style='font-size:12.0pt;font-family:
-Symbol;color:#151515'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN style='font-size:12.0pt;font-family:"Arial","sans-serif";
-color:#151515'>Run on a cluster system</span></p><p class=MsoListParagraphCxSpMiddle style='margin-bottom:11.25pt;margin-left:
-63.0pt;text-indent:-.25in;line-height:normal'><span lang=EN style='font-size:
-12.0pt;font-family:Wingdings;color:#151515'>&Oslash;<span style='font:7.0pt "Times New Roman"'>&nbsp;
-</span></span><span lang=EN style='font-size:12.0pt;font-family:"Arial","sans-serif";
-color:#151515'>SGE or LSF job management system</span></p><p class=MsoListParagraphCxSpMiddle style='margin-bottom:11.25pt;margin-left:
-63.0pt;text-indent:-.25in;line-height:normal'><span lang=EN style='font-size:
-12.0pt;font-family:Wingdings;color:#151515'>&Oslash;<span style='font:7.0pt "Times New Roman"'>&nbsp;
-</span></span><span lang=EN style='font-size:12.0pt;font-family:"Arial","sans-serif";
-color:#151515'>32 GB memory on each node</span></p><p class=MsoListParagraphCxSpMiddle style='margin-bottom:11.25pt;margin-left:
-63.0pt;line-height:normal'><span lang=EN style='font-size:12.0pt;font-family:
-"Arial","sans-serif";color:#151515'>&nbsp;</span></p><p class=MsoListParagraphCxSpMiddle style='margin-bottom:11.25pt;text-indent:
--.25in;line-height:normal'><span lang=EN style='font-size:12.0pt;font-family:
-Symbol;color:#151515'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN style='font-size:12.0pt;font-family:"Arial","sans-serif";
-color:#151515'>Run on a single server </span></p><p class=MsoListParagraphCxSpMiddle style='margin-bottom:11.25pt;margin-left:
-63.0pt;text-indent:-.25in;line-height:normal'><span lang=EN style='font-size:
-12.0pt;font-family:Wingdings;color:#151515'>&Oslash;<span style='font:7.0pt "Times New Roman"'>&nbsp;
-</span></span><span lang=EN style='font-size:12.0pt;font-family:"Arial","sans-serif";
-color:#151515'>32 GB memory</span></p><p class=MsoListParagraphCxSpLast style='margin-bottom:11.25pt;margin-left:
-63.0pt;text-indent:-.25in;line-height:normal'><span lang=EN style='font-size:
-12.0pt;font-family:Wingdings;color:#151515'>&Oslash;<span style='font:7.0pt "Times New Roman"'>&nbsp;
-</span></span><span lang=EN style='font-size:12.0pt;font-family:"Arial","sans-serif";
-color:#151515'>2 GHz processor</span></p><p class=MsoNormal style='margin-bottom:11.25pt;line-height:normal'><span
-lang=EN style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#151515'>&nbsp;</span></p>
+|  width=115 valign=top style='width:1.2in;border:solid windowtext 1.0pt;  border-top:none;padding:0in 5.4pt 0in 5.4pt' | 
+Hardware
+
+
+|  width=523 valign=top style='width:5.45in;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+Cluster
+settings:
+
+
+·        
+Run on a cluster system
+
+
+&Oslash; 
+SGE or LSF job management system
+
+
+&Oslash; 
+32 GB memory on each node
+
+ 
+·        
+Run on a single server 
+
+
+&Oslash; 
+32 GB memory
+
+
+&Oslash; 
+2 GHz processor
+
+ 
 |- 
-|  width=115 valign=top style='width:1.2in;border:solid windowtext 1.0pt;  border-top:none;padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:11.25pt;line-height:normal'><span
-lang=EN style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#151515'>Software</span></p>
-|  width=523 valign=top style='width:5.45in;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:11.25pt;line-height:normal'><span
-lang=EN style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#151515'>WINE
-install if run .raw file</span></p><p class=MsoNormal style='margin-bottom:11.25pt;line-height:normal'><span
-lang=EN style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#151515'>Perl
-modules:</span></p><p class=MsoNormal style='margin-bottom:11.25pt;line-height:normal'><span
-lang=EN style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#151515'>&nbsp;</span></p>
+|  width=115 valign=top style='width:1.2in;border:solid windowtext 1.0pt;  border-top:none;padding:0in 5.4pt 0in 5.4pt' | 
+Software
+
+
+|  width=523 valign=top style='width:5.45in;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
+WINE
+install if run .raw file
+
+
+Perl
+modules:
+
+ 
 |- 
-|  width=115 valign=top style='width:1.2in;border:solid windowtext 1.0pt;  border-top:none;padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:11.25pt;line-height:normal'><span
-lang=EN style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#151515'>&nbsp;</span></p>
-|  width=523 valign=top style='width:5.45in;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | <p class=MsoNormal style='margin-bottom:11.25pt;line-height:normal'><span
-lang=EN style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#151515'>&nbsp;</span></p>
-|}<p class=MsoNormal style='margin-bottom:11.25pt;line-height:normal'><span
-lang=EN style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#151515'>&nbsp;</span></p><p class=MsoNormal style='margin-bottom:11.25pt;line-height:normal'><b><u><span
-lang=EN style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#151515'>Features</span></u></b></p><p class=MsoNormal style='margin-bottom:11.25pt;line-height:normal'><span
-lang=EN style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#151515'>JUMP
-includes the following features:</span></p><p class=MsoNormal style='margin-bottom:11.25pt;line-height:normal'><span
-lang=EN style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#151515'>&nbsp;</span></p><p class=MsoListParagraphCxSpFirst style='margin-bottom:11.25pt;text-indent:
--.25in;line-height:normal'><span lang=EN style='font-size:12.0pt;font-family:
-"Arial","sans-serif";color:#151515'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN style='font-size:12.0pt;font-family:"Arial","sans-serif";
-color:#151515'>Support for input formats: .raw or .mzXML</span></p><p class=MsoListParagraphCxSpMiddle style='margin-bottom:11.25pt;text-indent:
--.25in;line-height:normal'><span lang=EN style='font-size:12.0pt;font-family:
-"Arial","sans-serif";color:#151515'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN style='font-size:12.0pt;font-family:"Arial","sans-serif";
-color:#151515'>Support for FASTA databases or indexed databases</span></p><p class=MsoListParagraphCxSpLast style='margin-bottom:11.25pt;text-indent:
--.25in;line-height:normal'><span lang=EN style='font-size:12.0pt;font-family:
-"Arial","sans-serif";color:#151515'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN style='font-size:12.0pt;font-family:"Arial","sans-serif";
-color:#151515'>&nbsp;</span></p><p class=MsoNormal style='line-height:normal'><span lang=EN style='font-size:
-12.0pt;font-family:"Arial","sans-serif";color:#151515'>&nbsp;</span></p><p class=MsoNormal style='line-height:normal'><span lang=EN style='font-size:
-12.0pt;font-family:"Arial","sans-serif";color:#151515'>&nbsp;</span></p><p class=MsoNormal style='line-height:normal'><span lang=EN style='font-size:
-12.0pt;font-family:"Arial","sans-serif";color:#151515'>&nbsp;</span></p><p class=MsoNormal style='line-height:normal'><span lang=EN style='font-size:
-12.0pt;font-family:"Arial","sans-serif";color:#026C79'>&nbsp;</span></p></div></body></html>
+|  width=115 valign=top style='width:1.2in;border:solid windowtext 1.0pt;  border-top:none;padding:0in 5.4pt 0in 5.4pt' |  
+|  width=523 valign=top style='width:5.45in;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' |  
+|} 
+*Features*
+
+
+JUMP
+includes the following features:
+
+ 
+1.   
+Support for input formats: .raw or .mzXML
+
+
+2.   
+Support for FASTA databases or indexed databases
+
+
+3.   
+ 

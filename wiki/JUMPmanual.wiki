@@ -65,9 +65,47 @@ software, such as ReAdW or msconverter.
 
    
 *Parameters guide*
-                                                                                                                                                                                                                                                                       
-|| *Name* || *Description* || *Type* || **Default** ||
-|| database_name || Specifies the FASTA or index protein database for search. If a FASTA  file was specified, the program will automatically build an indexed  database   || string || None ||
+|| *Name* || *Description* || *Type* || *Default** ||
+|| database_name || Specifies the FASTA or index protein database for search. If a FASTA  file was specified, the program will automatically build an indexed   database|| string || None ||
+|| enzyme_info || Specifies the enzyme information used for creating a database  || string || Tryptic KR P ||
+|| digestion || Specifies the digestion methods. Three types of methods can be used,  including Full, Partial, and None || string || Full ||
+|| max_mis_cleavage || A missed cleavage is defined as a site within the peptide matching  one of the cleavage rules (see enzyme_info). This parameter is used to set  the maximum number of missed cleavages. || integer || 2 ||
+|| min_peptide_mass || Specifies the minimum mass value of peptides in the database || integer || 400 ||
+|| max_peptide_mass || Specifies the maximum mass value of peptides in the database || integer || 6000 ||
+|| inclusion_decoy || This parameter is to set whether the database contains the decoy  sequences || boolean || 1 (true) 0 (false) ||
+|| isolation_window || Specifies the isolation window used for peak selection, with unit of  m/z || float || 1.0 ||
+|| intrascanppm || ppm for peak matching within the same scan || integer || 10 ||
+|| interscanppm || ppm for peak matching between different scans || integer || 5 ||
+|| preproc_msscanrange || range of ms scans used for decharging || integer || 4 ||
+|| ms2_consolidation || Specifies number of peaks to keep within 100 m/z units   || integer || 6 ||
+|| ms2_deisotope || Speficies whether to perform deisotope for MS2 peaks || boolean || 1 (true) 0 (false) ||
+|| prec_mass_window || Specifies to remove the peaks with the window with precursor mass +/-  value/2 (additional static 0.25 tolerance to either side) || float || 3.0 ||
+|| ppm || Tolerance (ppm) used for MS2 deisotope  || integer || 30 ||
+|| M_M1 || The intensity ratio between the peaks and following peaks.  || float || 0.3 ||
+|| Mn_Mn1 || The intensity ratio between the peaks and following peaks. || Float || 1 ||
+|| charge12_ppm || Specifies mass tolerance  || Integer || 30 ||
+|| ppi_percentage ||   ||   || 10 ||
+|| tag_tolerance || Mass tolerance used for tag inference || Float || 0.02 (high) 0.5 (low) ||
+|| low_mass || The minimum mass allowed to define a residue || Integer || 57 ||
+|| high_mass || The maximum mass allowed to define a residue || Integer || 180 ||
+|| tag_select_method || Two tag scoring methods can be used, including rank_p and hyper_p.  The rank_p method calculates the score based on wilcox rank sum method; the  hyper_p calculates the score based on hypergeometric method. || string || rank_p (high) hyper_p (low) ||
+|| ion_series ||  a, b, c, d, v, w, x, y, and z ions respectively. The values  entered for these paramters should either 0 or 1.  || String ||   ||
+|| peptide_tolerance || This parameter is used to find candidate peptides. The candidate peptides  is selected if the candidate mass is within this tolerance of the  experimental precursor mass. The units can be specified by the  ‘peptide_tolerance_units’ parameter. || integer || 15 ||
+|| peptide_tolerance_units || Two types of mass units: 1 for Da and 2 for parts per million (ppm). || integer || 2 ||
+|| frag_mass_tolerance || Specifies the fragment mass tolerance. The fragment tolerance should  be set at 0.01 for high depended on high-resolution instrument resolution; it  should be set at 0.5 for low-resolution instrument.  || float || 0.01 (high) 0.5 (low) ||
+|| tag_search_method || Two search methods can be specified: 1 for ; 2 for searching by the a  certain number of tags  || integer || 1 or 2 ||
+|| max_number_tags_for_search || This parameter is used to define the number of tags that are used for  search. The tag is sorted in terms of its p-value. The software search || integer || 100 ||
+|| tag_coeff_evalue || Specifies the weight of tag E value for calculating weighted E value. || float || 1.0 ||
+|| dynamic_AA || This parameter is used to define dynamic amino acids.  || Float ||   ||
+|| add_AA_name || This is static modification. If the value for any residues is setted,  it should always be treated as having a modification on their natural mass.  For example, the cysteine is carboxymethylated, this parameter would  be set to be: add_C_Cysteine = 57.02146. || float ||   ||
+|| max_modif_num || This parameter is used to set the maximum number of dynamic  modifications that can be in the candidate peptide.  || integer || 6 ||
+|| cluster || Specifies whether JUMP will be run on the cluster || boolean || 1 (true) 0 (false) ||
+|| Job_Management_System || Specifies the platform of the cluster. Three types of jobs can be  used: SGE, PBS and LSF. || String || SGE ||
+|| number_of_selected_result || Specifies the number of records being shown in the selected output section  in the output file.  || Integer || 3 ||
+|| number_of_detailed_result || Specifies the number of records being shown in the “Selected  identified peptide” section in the output file. || integer || 100 ||
+|| simulation || Specifies whether to perform simulation.  If true, either one of  the following methods can used to generate a falsified data sets based on  input real data. || boolean || 1 (true) 0 (false) ||
+|| sim_MS1 || If the ‘simulation’ parameter is set, the data set was generated by  adding precusor ion mass of each MS/MS spectrum by 100 ppm. || Integer || 100 ||
+|| sim_MS2 || If the ‘simulation’ parameter is set, the data set was generated by  randomizing the MS/MS spectrum. Briefly, we generated uniform random number  from -5 to 5, and added this random number to each m/z of each peak. || integer || 5 ||
 
    
 ############################## Parameter file for JUMP

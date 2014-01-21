@@ -3,7 +3,11 @@ JUMP v1.0
 = Introduction =
 
 Table of Contents:
+
 Introduction
+
 Download
+
 Usage
+
 Parameter guide

@@ -67,22 +67,7 @@ software, such as ReAdW or msconverter.
 *Parameters guide*
 
                                                                                                                                                                                                                                                                   
-|| 
-*Category*
-
- || 
-*Name*
-
- || 
-*Description*
-
- || 
-*Type*
-
- || 
-*Default**
-
- ||
+|| *Category* || *Name*  || *Description* || *Type* || *Default* ||
 || 
 Database
 

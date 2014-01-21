@@ -1,443 +1,1031 @@
-*JUMP**v1.0*
-
-
-Table
-of Contents:
-
-
-Introduction
-
-
-Download
-
-
-Usage
-
-
-Parameter
-guide
+                
+*JUMP v1.0*
 
  
+Table of Contents:
+
+ 
+Introduction
+
+ 
+Download
+
+ 
+Usage
+
+ 
+Parameter guide
+
+   
 *Introduction*
 
+ 
+JUMP (Jumbo Mass
+Spectrometry-based Proteomics Tool)
+is a new database search engine for peptide identification. JUMP incorporates
+sequence tag generation and tag scoring into database search.
 
-JUMP (Jumbo Mass Spectrometry-based
-Proteomics Tool) is a new database
-search engine for peptide identification. JUMP
-incorporates sequence tag generation and tag scoring into database search.
-
-
+ 
 *Download*
 
+ 
+The source code can be downloaded *here*
+and used according to the terms of the GNU General Public License (GPL),
+version 2 or later. The parameter file can be downloaded *here*. 
 
-The source code can be downloaded *here* and used
-according to the terms of the GNU General Public License (GPL), version 2
-or later. The parameter file can be downloaded *here*. 
+ 
+Sample data can be downloaded: data set 1 for regular
+identification and data set 2 for post-translational modifications.
 
-
-Sample
-data can be downloaded: data set 1 for regular identification and data set 2
-for post-translational modifications.
-
-
+ 
 *Usage*
 
+ 
+The basic
+usage of JUMP is quite simple:
 
-The basic usage of JUMP is
-quite simple:
-
-
+ 
 JUMP.pl -param &lt;JUMP
 parameter file&gt; -rawfile &lt; MS/MS data file&gt;
 
-
+ 
 -param
 &lt;file&gt;             
 specifies a JUMP parameter file
 
-
+ 
 -rawfile
 &lt;file&gt;             
 specifies an MS/MS data file
 
-
+ 
 An MS/MS data file can be
 either .RAW or mzXML file that can be converted from .RAW file by various
 software, such as ReAdW or msconverter.
 
- 
-*Parameters
-guide*
+   
+*Parameters guide*
+
+                                                                                                                                                                                                                                                                  
+|| 
+*Category*
+
+ || 
+*Name*
+
+ || 
+*Description*
+
+ || 
+*Type*
+
+ || 
+*Default**
+
+ ||
+|| 
+Database
+
+ || 
+database_name
+
+ || 
+Specifies the FASTA or index protein database for search. If a FASTA
+  file was specified, the program will automatically build an indexed
+  database  
+
+ || 
+string
+
+ || 
+None
+
+ ||
+|| 
+enzyme_info
+
+ || 
+Specifies the enzyme information used for creating a database 
+
+ || 
+string
+
+ || 
+Tryptic KR P
+
+ ||
+|| 
+digestion
+
+ || 
+Specifies the digestion methods. Three types of methods can be used,
+  including Full, Partial, and None
+
+ || 
+string
+
+ || 
+Full
+
+ ||
+|| 
+max_mis_cleavage
+
+ || 
+A missed cleavage is defined as a site within the peptide matching
+  one of the cleavage rules (see enzyme_info). This parameter is used to set
+  the maximum number of missed cleavages.
+
+ || 
+integer
+
+ || 
+2
+
+ ||
+|| 
+min_peptide_mass
+
+ || 
+Specifies the minimum mass value of peptides in the database
+
+ || 
+integer
+
+ || 
+400
+
+ ||
+|| 
+max_peptide_mass
+
+ || 
+Specifies the maximum mass value of peptides in the database
+
+ || 
+integer
+
+ || 
+6000
+
+ ||
+|| 
+inclusion_decoy
+
+ || 
+This parameter is to set whether the database contains the decoy
+  sequences
+
+ || 
+boolean
+
+ || 
+1 (true)
 
  
+0 (false)
+
+ ||
+|| 
+Preprocessing
+
+ || 
+isolation_window
+
+ || 
+Specifies the isolation window used for peak selection, with unit of
+  m/z
+
+ || 
+float
+
+ || 
+1.0
+
+ ||
+|| 
+intrascanppm
+
+ || 
+ppm for peak matching within the same scan
+
+ || 
+integer
+
+ || 
+10
+
+ ||
+|| 
+interscanppm
+
+ || 
+ppm for peak matching between different scans
+
+ || 
+integer
+
+ || 
+5
+
+ ||
+|| 
+preproc_msscanrange
+
+ || 
+range of ms scans used for decharging
+
+ || 
+integer
+
+ || 
+4
+
+ ||
+|| 
+ms2_consolidation
+
+ || 
+Specifies number of peaks to keep within 100 m/z units  
+
+ || 
+integer
+
+ || 
+6
+
+ ||
+|| 
+ms2_deisotope
+
+ || 
+Speficies whether to perform deisotope for MS2 peaks
+
+ || 
+boolean
+
+ || 
+1 (true)
+
+ 
+0 (false)
+
+ ||
+|| 
+prec_mass_window
+
+ || 
+Specifies to remove the peaks with the window with precursor mass +/-
+  value/2 (additional static 0.25 tolerance to either side)
+
+ || 
+float
+
+ || 
+3.0
+
+ ||
+|| 
+ppm
+
+ || 
+Tolerance (ppm) used for MS2 deisotope 
+
+ || 
+integer
+
+ || 
+30
+
+ ||
+|| 
+M_M1
+
+ || 
+The intensity ratio between the peaks and following peaks. 
+
+ || 
+float
+
+ || 
+0.3
+
+ ||
+|| 
+Mn_Mn1
+
+ || 
+The intensity ratio between the peaks and following peaks.
+
+ || 
+Float
+
+ || 
+1
+
+ ||
+|| 
+charge12_ppm
+
+ || 
+Specifies mass tolerance 
+
+ || 
+Integer
+
+ || 
+30
+
+ ||
+||   || 
+ppi_percentage
+
+ ||   ||   || 
+10
+
+ ||
+|| 
+Tag
+
+ || 
+tag_tolerance
+
+ || 
+Mass tolerance used for tag inference
+
+ || 
+Float
+
+ || 
+0.02 (high)
+
+ 
+0.5 (low)
+
+ ||
+|| 
+low_mass
+
+ || 
+The minimum mass allowed to define a residue
+
+ || 
+Integer
+
+ || 
+57
+
+ ||
+|| 
+high_mass
+
+ || 
+The maximum mass allowed to define a residue
+
+ || 
+Integer
+
+ || 
+180
+
+ ||
+|| 
+tag_select_method
+
+ || 
+Two tag scoring methods can be used, including rank_p and hyper_p.
+  The rank_p method calculates the score based on wilcox rank sum method; the
+  hyper_p calculates the score based on hypergeometric method.
+
+ || 
+string
+
+ || 
+rank_p (high)
+
+ 
+hyper_p (low)
+
+ ||
+|| 
+Search
+
+ || 
+ion_series
+
+ || 
+ a, b, c, d, v, w, x, y, and z ions respectively. The values
+  entered for these paramters should either 0 or 1. 
+
+ || 
+String
+
+ ||   ||
+|| 
+peptide_tolerance
+
+ || 
+This parameter is used to find candidate peptides. The candidate peptides
+  is selected if the candidate mass is within this tolerance of the
+  experimental precursor mass. The units can be specified by the
+  ‘peptide_tolerance_units’ parameter.
+
+ || 
+integer
+
+ || 
+15
+
+ ||
+|| 
+peptide_tolerance_units
+
+ || 
+Two types of mass units: 1 for Da and 2 for parts per million (ppm).
+
+ || 
+integer
+
+ || 
+2
+
+ ||
+|| 
+frag_mass_tolerance
+
+ || 
+Specifies the fragment mass tolerance. The fragment tolerance should
+  be set at 0.01 for high depended on high-resolution instrument resolution; it
+  should be set at 0.5 for low-resolution instrument. 
+
+ || 
+float
+
+ || 
+0.01 (high)
+
+ 
+0.5 (low)
+
+ ||
+|| 
+tag_search_method
+
+ || 
+Two search methods can be specified: 1 for ; 2 for searching by the a
+  certain number of tags 
+
+ || 
+integer
+
+ || 
+1 or 2
+
+ ||
+|| 
+max_number_tags_for_search
+
+ || 
+This parameter is used to define the number of tags that are used for
+  search. The tag is sorted in terms of its p-value. The software search
+
+ || 
+integer
+
+ || 
+100
+
+ ||
+|| 
+tag_coeff_evalue
+
+ || 
+Specifies the weight of tag E value for calculating weighted E value.
+
+ || 
+float
+
+ || 
+1.0
+
+ ||
+|| 
+Modification
+
+ || 
+dynamic_AA
+
+ || 
+This parameter is used to define dynamic amino acids. 
+
+ || 
+Float
+
+ ||   ||
+|| 
+add_AA_name
+
+ || 
+This is static modification. If the value for any residues is setted,
+  it should always be treated as having a modification on their natural mass. 
+
+ 
+For example, the cysteine is carboxymethylated, this parameter would
+  be set to be: add_C_Cysteine = 57.02146.
+
+ || 
+float
+
+ ||   ||
+|| 
+max_modif_num
+
+ || 
+This parameter is used to set the maximum number of dynamic
+  modifications that can be in the candidate peptide. 
+
+ || 
+integer
+
+ || 
+6
+
+ ||
+|| 
+Cluster system
+
+ || 
+cluster
+
+ || 
+Specifies whether JUMP will be run on the cluster
+
+ || 
+boolean
+
+ || 
+1 (true)
+
+ 
+0 (false)
+
+ ||
+|| 
+Job_Management_System
+
+ || 
+Specifies the platform of the cluster. Three types of jobs can be
+  used: SGE, PBS and LSF.
+
+ || 
+String
+
+ || 
+SGE
+
+ ||
+|| 
+Ouput
+
+ || 
+number_of_selected_result
+
+ || 
+Specifies the number of records being shown in the selected output section
+  in the output file. 
+
+ || 
+Integer
+
+ || 
+3
+
+ ||
+|| 
+number_of_detailed_result
+
+ || 
+Specifies the number of records being shown in the “Selected
+  identified peptide” section in the output file.
+
+ || 
+integer
+
+ || 
+100
+
+ ||
+|| 
+Simulation
+
+ || 
+simulation
+
+ || 
+Specifies whether to perform simulation.  If true, either one of
+  the following methods can used to generate a falsified data sets based on
+  input real data.
+
+ || 
+boolean
+
+ || 
+1 (true)
+
+ 
+0 (false)
+
+ ||
+|| 
+sim_MS1
+
+ || 
+If the ‘simulation’ parameter is set, the data set was generated by
+  adding precusor ion mass of each MS/MS spectrum by 100 ppm.
+
+ || 
+Integer
+
+ || 
+100
+
+ ||
+|| 
+sim_MS2
+
+ || 
+If the ‘simulation’ parameter is set, the data set was generated by
+  randomizing the MS/MS spectrum. Briefly, we generated uniform random number
+  from -5 to 5, and added this random number to each m/z of each peak.
+
+ || 
+integer
+
+ || 
+5
+
+ ||
+ 
+Note: * represents suggested value for JUMP.
+
+                 <br>    
+*High-resolution data set*
+
+   
 ############################## Parameter file for JUMP
 #################################
 
-
+ 
 # JUMP version 10.02 
 
-
+ 
 # Date: 02/01/2013 
 
-
+ 
 # Author: Xusheng Wang 
 
-
+ 
 ####################################################################################
 
+   
+############################## Database
+#############################################
+
  
-############################## Database #############################################
-
-
 database_name = /home/xwang4/JUMP_database/human/human_ft_mc2_c57.fasta.mdx
 
-
+ 
 enzyme_info = Tryptic KR P
 
-
+ 
 digestion = full
 
-
+ 
 max_mis_cleavage = 2
 
-
+ 
 min_peptide_mass = 400.0000
 
-
+ 
 max_peptide_mass = 6000.0000
 
-
+ 
 inclusion_decoy = 1
 
-
+ 
 ############################## Preprocessing ##########################################
 
-
+ 
 precursor_mass_window = 0.19
 
-
+ 
 intrascanppm = 10
 
-
+ 
 interscanppm = 5
 
-
+ 
 preproc_msscanrange = 4
 
-
+ 
 peptide_tolerance = 15
 
-
+ 
 peptide_tolerance_units = 2        #
 1 = Th; 2 = ppm;
 
-
+ 
 vary_tolerance = 0
 
-
+ 
 peptide_tolerance_frac = 0.8
 
-
+ 
 ms2_consolidation = 6
 
-
+ 
 prec_window = 3
 
-
+ 
 ppm = 30
 
-
+ 
 M_M1 = 0.3
 
-
+ 
 Mn_Mn1 = 1
 
-
+ 
 charge12_ppm = 30
 
+ 
+#############################
+Tag##################################################
 
-############################# Tag##################################################
-
-
+ 
 tag_tolerance = 0.02
 
-
+ 
 low_mass = 57
 
-
+ 
 high_mass = 187
 
-
+ 
 tag_select_method = rank_p  # method can be input: hyper_p or
 rank_p
 
-
+ 
 ######################Search
 ###########################################
 
-
+ 
 ion_series = 0 1 0 0 0 0 0 1 0  # a, b, c, d, v, w, x, y, and z
 ions respectively
 
-
+ 
 frag_mass_tolerance = 0.02
 
+ 
+tag_search_method = 2       # 1. last when
+found 2. search using the number of tag assigned by 'max_number_tag_for_search'
 
-tag_search_method = 2       # 1. last
-when found 2. search using the number of tag assigned by
-'max_number_tag_for_search'
-
-
+ 
 max_number_tags_for_search = 500  # If this number larger than the
 total number of tag, the total number of tag will be used
 
-
+ 
 tag_coeff_evalue = 4
 
-
+ 
 ##################### Dynamic Modification
 ######################################
 
-
+ 
 # C:  57.02146 carbamidomethylation or 71.0371 acrylamide
 
-
+ 
 # STY: 79.96633
 
-
+ 
 # M: 15.99492
 
-
+ 
 # GG: 114.04293
 
-
+ 
 # SILAC K:4.02511, 6.02013, 8.01420
 
-
+ 
 # SILAC R:6.02013, 10.00827
 
-
+ 
 #STY = 0.000   
 
-
+ 
 #K = 0.000 
 
-
+ 
 dynamic_M = 15.99492
 
-
+ 
 max_modif_num = 6
 
-
+ 
 #################### Static Modification
 ############################################
 
-
+ 
 add_Cterm_peptide = 0.0000
 
-
+ 
 add_Nterm_peptide = 0.0000
 
-
+ 
 add_G_Glycine = 0.0000
 
-
+ 
 add_A_Alanine = 0.0000
 
-
+ 
 add_S_Serine = 0.0000
 
-
+ 
 add_P_Proline = 0.0000
 
-
+ 
 add_V_Valine = 0.0000
 
-
+ 
 add_T_Threonine = 0.0000
 
-
+ 
 add_C_Cysteine = 57.02146
 
-
+ 
 add_L_Leucine = 0.0000
 
-
+ 
 add_I_Isoleucine = 0.0000
 
-
+ 
 add_X_LorI = 0.0000
 
-
+ 
 add_N_Asparagine = 0.0000
 
-
+ 
 add_O_Ornithine = 0.0000
 
-
+ 
 add_B_avg_NandD = 0.0000
 
-
+ 
 add_D_Aspartic_Acid = 0.0000
 
-
+ 
 add_Q_Glutamine = 0.0000
 
-
+ 
 add_K_Lysine = 0.0000
 
-
+ 
 add_Z_avg_QandE = 0.0000
 
-
+ 
 add_E_Glutamic_Acid = 0.0000
 
-
+ 
 add_M_Methionine = 0.0000
 
-
+ 
 add_H_Histidine = 0.0000
 
-
+ 
 add_F_Phenylalanine = 0.0000
 
-
+ 
 add_R_Arginine = 0.0000
 
-
+ 
 add_Y_Tyrosine = 0.0000
 
-
+ 
 add_W_Tryptophan = 0.0000
 
-
+ 
 add_J_user_amino_acid = 0.0000
 
-
+ 
 add_U_user_amino_acid = 0.0000
 
-
+ 
 #################### Cluster system
 ####################################################
 
-
+ 
 cluster = 1
 
-
+ 
 Job_Management_System = SGE
 
-
+ 
 #################### Simulation ######################################################
 
-
+ 
 simulation = 0   # 1 = yes; 0 = no
 
-
+ 
 sim_MS1 = 0    # unit is ppm
 
-
+ 
 sim_MS2 = 0     # unit is Da
 
-
+ 
 ###################### Output for results
 ############################################### 
 
-
+ 
 number_of_selected_result = 3
 
-
+ 
 number_of_detailed_result = 100
 
-
+ 
 #####################################################################################
 
- 
+   
 JUMP manual
 
+ 
+*System Requirement*
 
-*System
-Requirement*
+ 
+JUMP must meet these minimum requirements.
 
-
-JUMP
-must meet these minimum requirements.
-
-
-{|  class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 style='border-collapse:collapse;border:none' 
-|  width=115 valign=top style='width:1.2in;border:solid windowtext 1.0pt;  background:#B6DDE8;padding:0in 5.4pt 0in 5.4pt' | 
+                  
+|| 
 *System*
 
-
-|  width=523 valign=top style='width:5.45in;border:solid windowtext 1.0pt;  border-left:none;background:#B6DDE8;padding:0in 5.4pt 0in 5.4pt' | 
+ || 
 *Requirements*
 
-
-|- 
-|  width=115 valign=top style='width:1.2in;border:solid windowtext 1.0pt;  border-top:none;padding:0in 5.4pt 0in 5.4pt' | 
+ ||
+|| 
 Hardware
 
-
-|  width=523 valign=top style='width:5.45in;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
-Cluster
-settings:
-
-
-·        
-Run on a cluster system
-
-
-&Oslash; 
-SGE or LSF job management system
-
-
-&Oslash; 
-32 GB memory on each node
+ || 
+Cluster settings:
 
  
-·        
-Run on a single server 
-
-
-&Oslash; 
-32 GB memory
-
-
-&Oslash; 
-2 GHz processor
+·         Run on a cluster system
 
  
-|- 
-|  width=115 valign=top style='width:1.2in;border:solid windowtext 1.0pt;  border-top:none;padding:0in 5.4pt 0in 5.4pt' | 
+&Oslash; 
+  SGE or LSF job management system
+
+ 
+&Oslash; 
+  32 GB memory on each node
+
+   
+·         Run on a single server 
+
+ 
+&Oslash; 
+  32 GB memory
+
+ 
+&Oslash; 
+  2 GHz processor
+
+   ||
+|| 
 Software
 
-
-|  width=523 valign=top style='width:5.45in;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' | 
-WINE
-install if run .raw file
-
-
-Perl
-modules:
+ || 
+WINE install if run .raw file
 
  
-|- 
-|  width=115 valign=top style='width:1.2in;border:solid windowtext 1.0pt;  border-top:none;padding:0in 5.4pt 0in 5.4pt' |  
-|  width=523 valign=top style='width:5.45in;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  padding:0in 5.4pt 0in 5.4pt' |  
-|} 
+Perl modules:
+
+   ||
+||   ||   ||
+   
 *Features*
 
+ 
+JUMP includes the following features:
 
-JUMP
-includes the following features:
+   
+1.    Support for input
+formats: .raw or .mzXML
 
  
-1.   
-Support for input formats: .raw or .mzXML
+2.    Support for FASTA
+databases or indexed databases
 
-
-2.   
-Support for FASTA databases or indexed databases
-
-
-3.   
  
+3.     
+
+            

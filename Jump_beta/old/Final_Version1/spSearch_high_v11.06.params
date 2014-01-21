@@ -1,0 +1,119 @@
+######################################## Parameter file for JUMP #################################
+# JUMP version 11.02 
+# Date: 05/17/2013 
+# Author: Xusheng Wang 
+##################################################################################################
+
+###################### Database ##################################################################
+database_name = /home/xwang4/JUMP_database/human/human_ft_mc2_c57.fasta.mdx
+enzyme_info = Tryptic KR P
+digestion = full
+max_mis_cleavage = 2
+min_peptide_mass = 400.0000
+max_peptide_mass = 6000.0000
+inclusion_decoy = 1
+max_modif_num = 6
+####################### Preprocessing ############################################################
+first_scan_extraction = 0 
+last_scan_extraction = 15000
+###### precursor ion #####################################################
+isolation_window = 1.0
+max_num_ppi = 1
+percentage_ppi = 0
+ppi_charge_0 = 0
+ppi_charge_1 = 0
+precursor_mass_window = 0.19
+intrascanppm = 10
+interscanppm = 5
+peptide_tolerance = 15
+peptide_tolerance_units = 2   # 1 = Da; 2 = PPM;
+
+####### consolidation ####################################################
+ms2_consolidation = 6
+
+###### MS2 Deisotope #####################################################
+prec_window = 3
+MS2_deisotope = 1
+ppm = 30
+M_M1 = 0.3
+Mn_Mn1 = 1
+charge12_ppm = 30
+
+##################### Tag ########################################################################
+tag_tolerance = 0.02
+low_mass = 57
+high_mass = 187
+tag_select_method = rank_p  # method can be input: hyper_p or rank_p
+
+###################### Search ####################################################################
+ion_series = 0 1 0 0 0 0 0 1 0  # a, b, c, d, v, w, x, y, and z ions respectively
+
+##### MS2 tolerance for side mass matching, pattern matching #####################################
+frag_mass_tolerance = 0.02
+tag_search_method = 2             # 1. last when found 2. search using the number of tag assigned by 'max_number_tag_for_search'
+max_number_tags_for_search = 500  # If this number larger than the total number of tag, the total number of tag will be used
+tag_coeff_evalue = 1
+min_tag_length = 1
+pho_neutral_loss = 0
+##################### Dynamic Modification #######################################################
+# C:  57.02146 carbamidomethylation or 71.0371 acrylamide
+# STY: 79.96633
+# M: 15.99492
+# GG: 114.04293
+# SILAC K:4.02511, 6.02013, 8.01420
+# SILAC R:6.02013, 10.00827
+#STY = 0.000   
+#K = 0.000 
+dynamic_M = 15.99492
+#dynamic_S = 79.96633
+#dynamic_T = 79.96633
+#dynamic_Y = 79.96633
+#R = 0.000
+#C = 0.000
+#P = 0.000
+#N_term = 0.000
+#C_term = 0.000
+
+
+#################### Static Modification ##########################################################
+add_Cterm_peptide = 0.0000
+add_Nterm_peptide = 0.0000
+add_G_Glycine = 0.0000
+add_A_Alanine = 0.0000
+add_S_Serine = 0.0000
+add_P_Proline = 0.0000
+add_V_Valine = 0.0000
+add_T_Threonine = 0.0000
+add_C_Cysteine = 57.02146
+add_L_Leucine = 0.0000
+add_I_Isoleucine = 0.0000
+add_X_LorI = 0.0000
+add_N_Asparagine = 0.0000
+add_O_Ornithine = 0.0000
+add_B_avg_NandD = 0.0000
+add_D_Aspartic_Acid = 0.0000
+add_Q_Glutamine = 0.0000
+add_K_Lysine = 0.0000
+add_Z_avg_QandE = 0.0000
+add_E_Glutamic_Acid = 0.0000
+add_M_Methionine = 0.0000
+add_H_Histidine = 0.0000
+add_F_Phenylalanine = 0.0000
+add_R_Arginine = 0.0000
+add_Y_Tyrosine = 0.0000
+add_W_Tryptophan = 0.0000
+add_J_user_amino_acid = 0.0000
+add_U_user_amino_acid = 0.0000
+
+#################### Cluster system #################################################################
+cluster = 1
+Job_Management_System = SGE
+
+#################### Simulation #####################################################################
+simulation = 0   # 1 = yes; 0 = no
+sim_MS1 = 0    # unit is ppm
+sim_MS2 = 0     # unit is Da
+###################### Output for results ###########################################################
+number_of_selected_result = 3
+number_of_detailed_result = 20
+#####################################################################################################

@@ -65,11 +65,37 @@ software, such as ReAdW or msconverter.
 
    
 *Parameters guide*
+                                                                                                                                                                                                                                                                       
+|| 
+*Name*
 
-                                                                                                                                                                                                                                                                  
-|| *Category* || *Name*  || *Description* || *Type* || *Default* ||
-|| Database   || database_name || Specifies the FASTA or index protein database for search. If a FASTA file was specified, the program will automatically build an indexed database  || string  || None ||
-|| enzyme_info
+ || 
+*Description*
+
+ || 
+*Type*
+
+ || 
+*Default**
+
+ ||
+|| 
+database_name
+
+ || 
+Specifies the FASTA or index protein database for search. If a FASTA
+  file was specified, the program will automatically build an indexed
+  database  
+
+ || 
+string
+
+ || 
+None
+
+ ||
+|| 
+enzyme_info
 
  || 
 Specifies the enzyme information used for creating a database 
@@ -154,9 +180,6 @@ boolean
 
  ||
 || 
-Preprocessing
-
- || 
 isolation_window
 
  || 
@@ -304,7 +327,7 @@ Integer
 30
 
  ||
-||   || 
+|| 
 ppi_percentage
 
  ||   ||   || 
@@ -312,9 +335,6 @@ ppi_percentage
 
  ||
 || 
-Tag
-
- || 
 tag_tolerance
 
  || 
@@ -375,9 +395,6 @@ hyper_p (low)
 
  ||
 || 
-Search
-
- || 
 ion_series
 
  || 
@@ -477,9 +494,6 @@ float
 
  ||
 || 
-Modification
-
- || 
 dynamic_AA
 
  || 
@@ -519,9 +533,6 @@ integer
 
  ||
 || 
-Cluster system
-
- || 
 cluster
 
  || 
@@ -552,9 +563,6 @@ SGE
 
  ||
 || 
-Ouput
-
- || 
 number_of_selected_result
 
  || 
@@ -583,9 +591,6 @@ integer
 
  ||
 || 
-Simulation
-
- || 
 simulation
 
  || 

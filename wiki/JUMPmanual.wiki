@@ -32,12 +32,12 @@ The basic
 usage of JUMP is quite simple:
 
  
-JUMP.pl -p <JUMP parameter file>  <MS/MS data file>
+JUMP.pl -p <parameter file>  <MS/MS data file>
 
  
--p <file>             specifies a JUMP parameter file
+-p parameter file             specifies a JUMP parameter file
 
-<file>                specifies an MS/MS data file
+MS/MS data file               specifies an MS/MS data file
 
  
 An MS/MS data file can be

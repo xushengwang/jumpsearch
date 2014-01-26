@@ -25,19 +25,7 @@ JUMP (Jumbo Mass
 Spectrometry-based Proteomics Tool)
 is a new database search engine for peptide identification. JUMP incorporates
 sequence tag generation and tag scoring into database search.
-
  
-*Download*
-
- 
-The source code can be downloaded *here*
-and used according to the terms of the GNU General Public License (GPL),
-version 2 or later. The parameter file can be downloaded *here*. 
-
- 
-Sample data can be downloaded: data set 1 for regular
-identification and data set 2 for post-translational modifications.
-
  
 *Usage*
 
@@ -46,16 +34,15 @@ The basic
 usage of JUMP is quite simple:
 
  
-JUMP.pl -param &lt;JUMP
-parameter file&gt; -rawfile &lt; MS/MS data file&gt;
+JUMP.pl -p &lt;JUMP
+parameter file&gt;  &lt; MS/MS data file&gt;
 
  
--param
+-p
 &lt;file&gt;             
 specifies a JUMP parameter file
 
  
--rawfile
 &lt;file&gt;             
 specifies an MS/MS data file
 
@@ -401,17 +388,8 @@ JUMP manual
 JUMP must meet these minimum requirements.
 
                   
-|| 
-*System*
-
- || 
-*Requirements*
-
- ||
-|| 
-Hardware
-
- || 
+|| *System* || *Requirements*||
+|| Hardware || 
 Cluster settings:
 
  
@@ -462,7 +440,6 @@ formats: .raw or .mzXML
 2.    Support for FASTA
 databases or indexed databases
 
- 
-3.     
+continue to working on it
 
             

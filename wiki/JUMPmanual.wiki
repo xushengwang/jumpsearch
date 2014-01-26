@@ -6,18 +6,16 @@
 Table of Contents:
 
  
-Introduction
+*Introduction*
 
  
-Download
+*Usage*
 
  
-Usage
-
- 
-Parameter guide
+*Parameter guide*
 
    
+
 *Introduction*
 
  
@@ -34,17 +32,12 @@ The basic
 usage of JUMP is quite simple:
 
  
-JUMP.pl -p &lt;JUMP
-parameter file&gt;  &lt; MS/MS data file&gt;
+JUMP.pl -p <JUMP parameter file>  <MS/MS data file>
 
  
--p
-&lt;file&gt;             
-specifies a JUMP parameter file
+-p <file>             specifies a JUMP parameter file
 
- 
-&lt;file&gt;             
-specifies an MS/MS data file
+<file>                specifies an MS/MS data file
 
  
 An MS/MS data file can be

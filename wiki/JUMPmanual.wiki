@@ -2,19 +2,6 @@
                 
 *JUMP v1.0*
 
- 
-Table of Contents:
-
- 
-*Introduction*
-
- 
-*Usage*
-
- 
-*Parameter guide*
-
-   
 
 *Introduction*
 
@@ -381,44 +368,25 @@ JUMP manual
 JUMP must meet these minimum requirements.
 
                   
-|| *System* || *Requirements*||
-|| Hardware || 
 Cluster settings:
 
- 
+Hardware: 
 ·         Run on a cluster system
 
- 
-&Oslash; 
-  SGE or LSF job management system
+·         SGE or LSF job management system
 
- 
-&Oslash; 
-  32 GB memory on each node
-
+·         32 GB memory on each node
    
 ·         Run on a single server 
 
- 
-&Oslash; 
-  32 GB memory
+·         2 GHz processor
+
+Software:
+
+·         WINE install if run .raw file
 
  
-&Oslash; 
-  2 GHz processor
-
-   ||
-|| 
-Software
-
- || 
-WINE install if run .raw file
-
- 
-Perl modules:
-
-   ||
-||   ||   ||
+·         Perl modules: 
    
 *Features*
 

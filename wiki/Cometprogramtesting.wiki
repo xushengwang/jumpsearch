@@ -1,14 +1,17 @@
-= Comet program =
+= [Comet program] =
 
 This webpage is designed for testing Comet program. Comet source code, parameter file, human database, and a sample raw file are available below:
 
 Comet program can be downloaded [http://sourceforge.net/projects/comet-ms/files/comet_source.2014010.zip/download here]
 
+The parameter used for testing can be downloaded [https://code.google.com/p/jumpsearch/source/browse/wiki/comet.params?spec=svn34&r=34 here]
 
 Human database can be downloaded [ftp://ftp.stjude.org/pub/software/jump/Human_20140709.fasta here] 
 
 A testing raw file with mzXML can be downloaded [ftp://ftp.stjude.org/pub/software/jump/mm_15000.mzXML here] 
 
+= [Linux System] =
+The program was tested using Linux CentOS 6.5 operating system. 
 
 
-= Details =
+The number of PSMs can b 

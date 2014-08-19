@@ -1,4 +1,4 @@
-= [Comet program] =
+= Comet program =
 
 This webpage is designed for testing Comet program. Comet source code, parameter file, human database, and a sample raw file are available below:
 
@@ -10,8 +10,13 @@ Human database can be downloaded [ftp://ftp.stjude.org/pub/software/jump/Human_2
 
 A testing raw file with mzXML can be downloaded [ftp://ftp.stjude.org/pub/software/jump/mm_15000.mzXML here] 
 
-= [Linux System] =
+= Command used =
+
+./Comet -Pcomet.params mm_15000.mzXML
+
+= Testing result =
+
+All PSMs were sorted by E-value, and the FDR was calculated by Decoy#/(Decoy# + Target#)
+ 
+= Linux System =
 The program was tested using Linux CentOS 6.5 operating system. 
-
-
-The number of PSMs can b 

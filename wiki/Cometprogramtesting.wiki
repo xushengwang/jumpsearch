@@ -1,10 +1,8 @@
-This webpage is used for Comet program testing.
 
-= Introduction =
+= Comet program testing =
 
-Comet program testing
+Human database can be download [ftp://ftp.stjude.org/pub/software/jump/Human_20140709.fasta here] 
 
-Database can be download here[http://domain/page label] 
 
 = Details =
 

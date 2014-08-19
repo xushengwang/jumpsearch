@@ -16,7 +16,7 @@ A testing raw file with mzXML can be downloaded [ftp://ftp.stjude.org/pub/softwa
 
 = Testing result =
 
-All PSMs were sorted by E-value, and the FDR was calculated by Decoy#/(Decoy# + Target#)
- 
+All PSMs were sorted by E-value, and the FDR was calculated by Decoy#/(Decoy# + Target#). The numbers of PSMs at 1% and 10% FDR were 4805 and 6421, respectively.  
+
 = Linux System =
 The program was tested using Linux CentOS 6.5 operating system. 

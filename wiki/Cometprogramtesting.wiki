@@ -1,7 +1,11 @@
-
 = Comet program testing =
 
-Human database can be download [ftp://ftp.stjude.org/pub/software/jump/Human_20140709.fasta here] 
+Comet program can be downloaded [http://sourceforge.net/projects/comet-ms/files/comet_source.2014010.zip/download here]
+
+Human database can be downloaded [ftp://ftp.stjude.org/pub/software/jump/Human_20140709.fasta here] 
+
+A testing raw file with mzXML can be downloaded [ftp://ftp.stjude.org/pub/software/jump/mm_15000.mzXML here] 
+
 
 
 = Details =

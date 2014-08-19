@@ -1,6 +1,6 @@
 = Comet program =
 
-This webpage is designed for testing Comet program. Comet source code, parameter file, human database, and a sample raw file are available below:
+This webpage is designed for testing Comet program. To run the Comet program, four files, including Comet source code, parameter file, human database, and a sample raw file, can be downloaded below:
 
 Comet program can be downloaded [http://sourceforge.net/projects/comet-ms/files/comet_source.2014010.zip/download here]
 
@@ -16,7 +16,7 @@ A testing raw file with mzXML can be downloaded [ftp://ftp.stjude.org/pub/softwa
 
 = Testing result =
 
-All PSMs were sorted by E-value, and the FDR was calculated by Decoy#/(Decoy# + Target#). The numbers of PSMs at 1% and 10% FDR were 4805 and 6421, respectively.  
+All PSMs were sorted by E-value after searching. We detected 4805 and 6421 at 1% and 10% FDR, respectively.  
 
 = Linux System =
 The program was run on Linux CentOS 6.5 operating system. 

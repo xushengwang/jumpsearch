@@ -12,7 +12,7 @@ A testing raw file with mzXML can be downloaded [ftp://ftp.stjude.org/pub/softwa
 
 = Command used =
 
-./Comet -Pcomet.params mm_15000.mzXML
+./comet.exe -Pcomet.params mm_15000.mzXML
 
 = Testing result =
 

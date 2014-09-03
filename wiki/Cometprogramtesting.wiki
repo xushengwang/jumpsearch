@@ -16,7 +16,7 @@ A testing raw file with mzXML can be downloaded [ftp://ftp.stjude.org/pub/softwa
 
 = Testing result =
 
-All PSMs were sorted by E-value after searching. We detected 4551 and 5703 at 1% and 10% FDR, respectively.  
+All PSMs were sorted by E-value after searching. We detected 4805 and 6427 at 1% and 10% FDR, respectively.  
 
 = Linux System =
 The program was run on Linux CentOS 6.5 operating system. 
